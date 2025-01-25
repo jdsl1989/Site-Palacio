@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    text-align: center;
+}
+
+body{
+    font-family: 100%;
+    background-color:rgb(182, 177, 172)
+}
+
+.cabecalho{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgb(219, 213, 213);
+    width: 100%;
+}
+
+.cabecalho-imagem{
+    height: 80px;
+}
+
+.cabecalho-menu{
+  display: flex;
+  gap: 65px;
+}
+
+.cabecalho-menu-item{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 400;
+    font-size: 25px;
+    font-weight: bold;
+    color: black;
+}
+
+.conteudo-principal-imagem{
+    height: 350px;
+    width:100%;
+    border-bottom: 1px;
+
+}
+
+.conteudo-principal-escrito{
+    text-align: center;
+    font-size: 25px;
+    background-color: rgb(247, 249, 250);
+    width: 100%;
+    border: 2px solid black;
+    
+}
+
+.conteudo-principal-escrito-titulo{
+    font-family: avenir-lt-w01_85-heavy1475544, sans-serif;
+    color: rgb(7, 139, 129);
+    font-size: 50px;
+    padding: 28px;
+    padding-bottom: 28px;
+}
+
+.conteudo-secundario{
+    padding: 28px;
+    font-family: avenir-lt-w01_85-heavy1475544, sans-serif;
+    color: rgb(7, 139, 129);
+    font-size: 50px;
+    padding: 28px;
+    padding-bottom: 28px;
+    background-color: aliceblue;
+    border: 2px solid black;
+    margin: 28px;
+}
+
+.conteudo-secundario-imagem{
+    width: 100%;
+}
+
+
+.conteudo-terciario-titulo{
+    font-family: avenir-lt-w01_85-heavy1475544, sans-serif;
+    color: rgb(7, 139, 129);
+    font-size: 50px;
+    padding: 28px;
+    padding-bottom: 28px;
+}
+
+footer{
+    background-color: aliceblue;
+}
