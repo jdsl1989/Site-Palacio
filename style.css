@@ -16,12 +16,14 @@ body{
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
-    background-color: rgb(219, 213, 213);
+    background-color:white;
     width: 100%;
+    height: 45px;
+    border: solid black 3px;
 }
 
 .cabecalho-imagem{
-    height: 80px;
+    height: 30px;
 }
 
 .cabecalho-menu{
@@ -40,16 +42,18 @@ body{
 .conteudo-principal-imagem{
     height: 350px;
     width:100%;
-    border-bottom: 1px;
+    border-bottom: 5px 5px;
 
 }
 
 .conteudo-principal-escrito{
+    font-family:cursive;
     text-align: center;
     font-size: 25px;
-    background-color: rgb(247, 249, 250);
+    background-color: white;
     width: 100%;
     border: 2px solid black;
+
     
 }
 
@@ -68,13 +72,14 @@ body{
     font-size: 50px;
     padding: 28px;
     padding-bottom: 28px;
-    background-color: aliceblue;
+    background-color: white;
     border: 2px solid black;
     margin: 28px;
+    text-align: center;
 }
 
 .conteudo-secundario-imagem{
-    width: 100%;
+    width:auto
 }
 
 
@@ -84,7 +89,11 @@ body{
     font-size: 50px;
     padding: 28px;
     padding-bottom: 28px;
-}
+ }
+
+ .conteudo-terciario-iframe{
+    border-radius: 10%;
+ }
 
 footer{
     background-color: aliceblue;
