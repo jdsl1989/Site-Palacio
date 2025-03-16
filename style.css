@@ -45,7 +45,11 @@ body{
 
 .conteudo-principal-imagem{
     background-image:url(img/rolamento\ 1.png);
+    background-position: center;
+    background-size: cover;
+    background-position: 0px 25%;
     height: 100vh;
+    
 
 }
 
