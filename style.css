@@ -19,7 +19,7 @@ body {
     align-items: center;
     padding: 15px 40px;
 }
-.logo img{
+.logo,img{
     height: 40px;
 }
 .contact-info{
@@ -28,15 +28,78 @@ body {
     padding: 5px 15px;
     border-radius: 5px;
 }
-.social-icons img{
+.social-icons,img{
     height: 25px;
     margin-left: 10px;
     cursor: pointer;
 }
-/*estrutura da pagina */
-.conteiner{
+/* Estrutura da página */
+.container {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 80px 40px;
+}
+
+/* Texto alinhado à esquerda */
+.text-content {
+    max-width: 600px;
+}
+
+h2 {
+    font-size: 24px;
+    color: #e6b400;
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 48px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-top: 10px;
+}
+
+/* Botões */
+.buttons {
+    margin-top: 20px;
+}
+
+.btn {
+    padding: 12px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+    transition: 0.3s;
+}
+
+.btn-yellow {
+    background-color: #f7d56b;
+    color: black;
+    margin-right: 15px;
+}
+
+.btn-yellow:hover {
+    background-color: #e6b400;
+}
+
+.btn-outline {
+    border: 2px solid white;
+    color: white;
+}
+
+.btn-outline:hover {
+    background-color: white;
+    color: black;
+}
+
+/* Imagem ao lado direito */
+.image-content img {
+    max-width: 500px;
 }
