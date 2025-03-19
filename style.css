@@ -8,24 +8,25 @@
 
 /*fudo e estrutura da pagina */
 body {
-    background: linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.5)), url(img/rolamento.jpg) no-repeat center center;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.5)), url() no-repeat center center;
     background-size: cover;
     color: white;
 }
-/*barra superior com logo, telefoe e icoes sociais */
+/*barra superior com logo, telefone e icoes sociais */
 .top-bar{
+    border-bottom: 2px solid #FFD700;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 40px;
+    padding: 20px 40px;
+    background-color: black;
+    border: bottom 5px; ;
 }
-.logo,img{
-    height: 40px;
-}
-.contact-info{
-    font-size: 18px;
-    background: rgba(255,255,255,0.2);
-    padding: 5px 15px;
+
+
+.contato-info{
+    font-size: 20px;
+    padding: 10px 15px;
     border-radius: 5px;
 }
 .social-icons,img{
@@ -42,8 +43,19 @@ body {
 }
 
 /* Texto alinhado à esquerda */
+.container-image{
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    background-image:url(img/frente.png);
+    height: 90vh;
+    filter: brightness(10%);
+    padding-top: 5%;
+}
 .text-content {
-    max-width: 600px;
+    max-width: 550px;
+    position: absolute;
+    top: 35%;
 }
 
 h2 {
@@ -66,32 +78,40 @@ p {
 
 /* Botões */
 .buttons {
-    margin-top: 20px;
+    display: flex;
+    gap: 10px;
 }
 
 .btn {
-    padding: 12px 20px;
-    font-size: 16px;
-    font-weight: bold;
-    border-radius: 5px;
-    text-decoration: none;
     display: inline-block;
-    transition: 0.3s;
-}
+    align-items: center;
+    justify-content: center;
+    font-family: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: 0.3s ease-in-out;
+    margin-top: 10%
+    ;
+    }
 
 .btn-yellow {
     background-color: #f7d56b;
     color: black;
     margin-right: 15px;
+    padding: 15px 20px;
 }
 
-.btn-yellow:hover {
-    background-color: #e6b400;
+.btn-yellow:hover{
+    background-color: #FFD700;
+    color: black;
+    border: 2px solid #FFD700;
 }
 
 .btn-outline {
     border: 2px solid white;
     color: white;
+    padding: 15px 20px;
 }
 
 .btn-outline:hover {
@@ -101,5 +121,58 @@ p {
 
 /* Imagem ao lado direito */
 .image-content img {
-    max-width: 500px;
+    max-width: 150%;
+}
+
+/*serviços */
+
+.servicos{
+    padding: 0px 0px 0px 10%;
+}
+
+.descricao{
+    max-width: 800px;
+    margin: 0 auto 30px;
+    font-size: 25px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.cards{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    text-align: center;
+    padding: 30px;
+    width: 390x;
+    height: auto;
+}
+
+.card{
+    background-color: #1c1c1c;
+    padding: 30px 60px;
+    width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+    transition: transform 0.3s;
+}
+
+.card:hover{
+    transform: scale(1.05);
+}
+
+.card img{
+    width: 60px;
+    margin-bottom: 20px;
+}
+
+.card p{
+    font-size: 20px;
+    color: white;
+}
+
+h3{
+    font-size: 25px;
+    color: #FFD700;
 }
