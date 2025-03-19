@@ -177,3 +177,61 @@ h3{
     font-size: 25px;
     color: #FFD700;
 }
+.containerr {
+    display: flex;
+    
+    justify-content: space-between;
+    align-items: center;
+    background-image: url(img/frente1.jpeg);
+   background-size: cover;
+}
+
+/* Texto */
+.texto {
+    max-width: 50%;
+}
+
+.texto h3 {
+    color: orange;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.texto h1 {
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 1.4;
+}
+
+/* Botões */
+.botoes {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.botoes button {
+    background-color: #333;
+    color: white;
+    border: 2px solid #555;
+    padding: 10px 15px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.botoes button:hover {
+    background-color: orange;
+    border-color: orange;
+}
+
+/* Imagem */
+.imagem {
+    background-size: cover;
+}
+
+.imagem img {
+    width: 250px;
+    border-radius: 5px;
+}
