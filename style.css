@@ -11,6 +11,7 @@ body {
     background: linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.5)), url() no-repeat center center;
     background-size: cover;
     color: white;
+
 }
 /*barra superior com logo, telefone e icoes sociais */
 .top-bar{
