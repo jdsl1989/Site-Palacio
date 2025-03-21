@@ -134,7 +134,7 @@ p {
 .descricao {
     font-size: 25px;
     font-weight: bold;
-    padding:5px 40px 10px 0px;
+    padding: 5px 40px 10px 0px;
     height: 150px;
 
 }
@@ -145,7 +145,7 @@ p {
     gap: 20px;
     flex-wrap: wrap;
     text-align: center;
-  
+
 }
 
 .card {
@@ -238,7 +238,8 @@ h3 {
     width: 250px;
     border-radius: 5px;
 }
-.whatsapp{
+
+.whatsapp {
     position: fixed;
     bottom: 10px;
     right: 70px;
@@ -250,45 +251,47 @@ h3 {
 
 
 /* Responsividade */
-@media (max-width: 768px) 
+@media (max-width: 768px) {
+
     .top-bar {
         flex-direction: column;
         align-items: center;
         text-align: center;
         padding: 10px;
     }
+}
 
-    .container {
-        flex-direction: column;
-        text-align: center;
-        padding: 20px;
-    }
+.container {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+}
 
-    .text-content {
-        max-width: 90%;
-        text-align: center;
-    }
+.text-content {
+    max-width: 90%;
+    text-align: center;
+}
 
-    .buttons {
-        justify-content: center;
-    }
+.buttons {
+    justify-content: center;
+}
 
-    .cards {
-        flex-direction: column;
-        align-items: center;
-    }
+.cards {
+    flex-direction: column;
+    align-items: center;
+}
 
-    .containerr {
-        flex-direction: column;
-        text-align: center;
-        padding: 20px;
-    }
+.containerr {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+}
 
-    .texto {
-        max-width: 100%;
-    }
+.texto {
+    max-width: 100%;
+}
 
-    .imagem img {
-        width: 80%;
-        max-width: 250px;
-    }
+.imagem img {
+    width: 80%;
+    max-width: 250px;
+}
