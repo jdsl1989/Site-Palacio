@@ -238,3 +238,47 @@ h3 {
     width: 250px;
     border-radius: 5px;
 }
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .top-bar {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .container {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .text-content {
+        max-width: 90%;
+        text-align: center;
+    }
+
+    .buttons {
+        justify-content: center;
+    }
+
+    .cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .containerr {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .texto {
+        max-width: 100%;
+    }
+
+    .imagem img {
+        width: 80%;
+        max-width: 250px;
+    }
