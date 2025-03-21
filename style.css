@@ -251,10 +251,10 @@ h3 {
 
 
 /* Responsividade */
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
 
     .top-bar {
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
         text-align: center;
         padding: 10px;
@@ -262,13 +262,13 @@ h3 {
 }
 
 .container {
-    flex-direction: column;
+    flex-direction: row;
     text-align: center;
     padding: 20px;
 }
 
 .text-content {
-    max-width: 90%;
+    max-width: 100%;
     text-align: center;
 }
 
@@ -277,7 +277,7 @@ h3 {
 }
 
 .cards {
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
 }
 
