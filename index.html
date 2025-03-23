@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Palácio dos Rolamentos - Produtos de alta qualidade com excelente atendimento.">
     <title>Palácio dos Rolamentos</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
 </head>
+
 <body>
     <header class="top-bar">
         <div class="logo">
@@ -30,16 +33,19 @@
         <div class="overlay"></div>
         <div class="text-content">
             <h1>Palácio dos Rolamentos</h1>
-            <p>Com mais de 30 anos de experiência, oferecemos os melhores produtos com qualidade e preços competitivos.</p>
+            <p>Com mais de 30 anos de experiência, oferecemos os melhores produtos com qualidade e preços competitivos.
+            </p>
             <div class="buttons">
-                <a href="#" class="btn btn-yellow">Solicitar orçamento</a>
-                <a href="#" class="btn btn-outline">Conhecer produtos</a>
+                <a href="#btn btn-yellow" class="btn btn-yellow">Solicitar orçamento</a>
+                <a href="#btn btn-outline" class="btn btn-outline">Conhecer produtos</a>
             </div>
         </div>
     </section>
 
     <section class="servicos">
-        <p class="descricao">Trabalhamos com <span>rolamentos</span>, <span>correias</span>, <span>retentores</span>, <span>polias</span>, <span>mancais</span> e muito mais!</p>
+        <p class="descricao">Trabalhamos com <span>rolamentos</span>, <span>correias</span>, <span>retentores</span>,
+            <span>polias</span>, <span>mancais</span> e muito mais!
+        </p>
         <div class="cards">
             <div class="card">
                 <img src="img/qualidade.png" alt="Produtos de qualidade">
@@ -52,15 +58,73 @@
                 <p>Nossos profissionais são altamente qualificados.</p>
             </div>
             <div class="card">
-                <img src="img/qualidade.png" alt="Melhores marcas">
+                <img src="img/marcas.png" alt="Melhores marcas">
                 <h3>Melhores marcas</h3>
                 <p>Ampla variedade de produtos das marcas mais confiáveis.</p>
             </div>
         </div>
+        <p id="btn btn-outline" class="carrosel-texto">LINHA DE PRODUTOS</p>
+        <div class="carrosel-container">
+            <div class="carrosel">
+                <img src="img/ferramentas.jpg" alt="ferramentas">
+                <img src="img/correias.jpg" alt="correias">
+                <img src="img/mancais.jpg" alt="mancais">
+                <img src="img/motores.jpg" alt="motores">
+                <img src="img/polia.jpg" alt="polias">
+                <img src="img/retentores.jpg" alt="retentores">
+                <img src="img/rolamentos.jpg" alt="rolamentos">
+            </div>
+        </div>
     </section>
 
+    <section class="contato">
+        <div class="container">
+            <div class="left-section">
+                <h1 id="btn btn-yellow">Contato</h1>
+                <p>Entre em contato para dúvidas ou solicitar um orçamento.</p>
+                <div class="adress">
+                    <img src="img/localiza.png" alt="Localização">
+                    <p><strong>ENDEREÇO:</strong> R. Dom José, 216 - Santo Antônio, Garanhuns - PE, 55293-120</p>
+                </div>
+                <div class="hours">
+                    <img src="img/horario.png" alt="Horário de atendimento">
+                    <p><strong>HORÁRIO:</strong> Segunda a sexta, das 8h às 18h. Sábado até às 13h.</p>
+                </div>
+            </div>
+            <div class="right-section">
+                <form action="https://formspree.io/f/palaciodosrolamentos@gmail.com" method="POST">
+                    <label for="name">Nome:</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="message">Mensagem:</label>
+                    <textarea id="message" name="message" required></textarea>
+
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
+            <div class="mapa">
+                <iframe
+                    src="
+                    https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3941.8534449395897!2d-36.49764672498283!3d-8.893214691162777!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7070cee22aaaaad%3A0x24e6dc3b7b0422c4!2sPal%C3%A1cio%20dos%20Rolamentos!5e0!3m2!1spt-BR!2sbr!4v1742764215008!5m2!1spt-BR!2sbr"
+                    width="600" height="250" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>"
+            </div>
+        </div>
+    </section>
+    <div class="whatsapp-button">
+        <a href="https://wa.me/5587999225916" target="_blank">
+            <img src="img/whatsapp.png" alt="whatsapp">
+        </a>
+    </div>
+
     <footer>
-        <p>&copy; 2025 Palácio dos Rolamentos. Todos os direitos reservados.</p>
+        <p>&copy; Temos de Uso • Política de Privacidade Copyright © 2025 Palacio dos Rolamentos. Desenvolvido por
+            Lunasystems.
+        </p>
     </footer>
 </body>
+
 </html>

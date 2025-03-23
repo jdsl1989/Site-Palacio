@@ -10,6 +10,7 @@
 body {
     background: linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.5));
     color: white;
+    line-height: 1.6;
 }
 
 /* Barra superior */
@@ -18,9 +19,9 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 20px;
+    padding: 15px 5%;
     background-color: black;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
 }
 
 .logo img {
@@ -36,12 +37,17 @@ body {
 
 .social-icons {
     display: flex;
-    gap: 10px;
+    gap: 15px;
 }
 
 .social-icons img {
     height: 35px;
     cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.social-icons img:hover {
+    transform: scale(1.1);
 }
 
 /* Seção Hero */
@@ -50,7 +56,7 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
-    min-height: 80vh;
+    min-height: 60vh;
     background: url(img/frente.png) center/cover no-repeat;
     position: relative;
     padding: 20px;
@@ -68,7 +74,6 @@ body {
 .text-content {
     position: relative;
     max-width: 600px;
-    text-align: center;
     padding: 20px;
 }
 
@@ -80,7 +85,6 @@ h1 {
 
 p {
     font-size: 18px;
-    line-height: 1.5;
     margin-top: 10px;
 }
 
@@ -98,8 +102,7 @@ p {
     font-weight: bold;
     text-decoration: none;
     border-radius: 8px;
-    transition: 0.3s ease-in-out;
-    cursor: pointer;
+    transition: 0.3s;
     padding: 12px 20px;
     display: inline-block;
 }
@@ -128,7 +131,7 @@ p {
 
 /* Serviços */
 .servicos {
-    padding: 40px 20px;
+    padding: 40px 5%;
     text-align: center;
 }
 
@@ -146,11 +149,11 @@ p {
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
     text-align: center;
+    transition: transform 0.3s;
 }
 
 .card:hover {
     transform: scale(1.05);
-    transition: transform 0.3s;
 }
 
 .card img {
@@ -164,12 +167,131 @@ p {
     margin-bottom: 10px;
 }
 
+.carrosel-container {
+    max-width: 700px;
+    overflow: hidden;
+    position: relative;
+    margin: 20px auto;
+}
+
+.carrosel {
+    display: flex;
+    gap: 20px;
+    animation: slide 9s infinite;
+}
+
+.carrosel img {
+    padding: 10px;
+    width: 400px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.carrosel-texto {
+    font-size: 30px;
+    margin-top: 20px;
+}
+
+@keyframes slide {
+    0%, 33.33% { transform: translateX(0%); }
+    33.34%, 66.66% { transform: translateX(-100%); }
+    66.67%, 100% { transform: translateX(-200%); }
+}
+
+/* Contato */
+.container2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 40px 5%;
+    background-color: #222;
+}
+
+.left-section, .right-section {
+    flex: 1;
+    min-width: 300px;
+    padding: 20px;
+}
+
+.left-section h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.left-section p {
+    margin-bottom: 10px;
+}
+
+.adress, .hours {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.adress img, .hours img {
+    width: 25px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #333;
+    color: white;
+}
+
+form button {
+    background-color: #FFD700;
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+form button:hover {
+    background-color: #f7d56b;
+}
+
 /* Footer */
 footer {
     text-align: center;
     padding: 20px;
-    background: black;
+    background-color: black;
+    border-top: 5px solid #FFD700;
+    font-size: 14px;
 }
 
+.mapa{
+    text-align: center;
+}
 
+.whatsapp-button{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px, 4px, 10px, rgba(0,0,0,0.3);
+    transition: transform 0.3s ease-in-out;
+}
 
+.whatsapp-button:hover {
+    transform: scale(1.1);
+}
+
+.whatsapp-button img {
+    width: 60px;
+    height: 60px;
+}
