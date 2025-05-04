@@ -261,6 +261,38 @@ form button:hover {
     background-color: #f7d56b;
 }
 
+/*carousel */
+.carousel {
+    width: 100%;
+    max-width: 800px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    aspect-ratio: 16/9;
+}
+
+.slides {
+  display: flex;
+  animation: deslizar 20s linear infinite;
+  flex-direction: row-reverse;
+}
+
+.slide {
+    width: 100%;
+flex: 0 0 100%
+}
+
+.slide img {
+width: 300px;
+height: auto;
+margin-left: 10px;
+}
+
+/* Animação automática */
+@keyframes deslizar {
+   0% {transform: translateX(0%);}
+   100%{transform: translateX(-50%);}
+}
 /* Footer */
 footer {
     text-align: center;
